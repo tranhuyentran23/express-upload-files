@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>File Uploading Form</title>
+  </head>
+
+  <body>
+    <h3>File Upload use multer:</h3>
+    Select a file to upload: <br />
+
+    <form action="/files/add" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" />
+      <input type="submit" value="Upload File" />
+    </form>
+
+    <h3>File Upload use connect-multiparty:</h3>
+    Select a file to upload: <br />
+
+    <form action="/files/add2" method="post" enctype="multipart/form-data">
+      <input type="file" name="file2" />
+      <input type="submit" value="Upload File" />
+    </form>
+  </body>
+</html>
